@@ -2,6 +2,10 @@
 
 An MCP server that connects to Vercel API.
 
+<a href="https://glama.ai/mcp/servers/@ZukAi-MCP/vercel-api-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ZukAi-MCP/vercel-api-mcp/badge" alt="Vercel MCP server" />
+</a>
+
 ## Usage
 
 ### Cursor
@@ -86,4 +90,3 @@ This MCP server provides the following tools for interacting with the Vercel API
 - `createVercelProjectEnv` - Create one or more environment variables
 - `removeVercelProjectEnv` - Remove an environment variable
 - `editVercelProjectEnv` - Edit an environment variable
-
