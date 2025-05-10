@@ -1,4 +1,4 @@
-# vercel-mcp
+## vercel-mcp
 
 An MCP server that connects to Vercel API.
 
