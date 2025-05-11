@@ -686,6 +686,7 @@ Here's a basic example of implementing an MCP server:
   </Tab>
 </Tabs>
 
+
 ## Best practices
 
 ### Transport selection
