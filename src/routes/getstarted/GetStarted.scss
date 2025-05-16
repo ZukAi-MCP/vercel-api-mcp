@@ -1,0 +1,112 @@
+@import '../../config.scss';
+
+.getstarted-title{
+  @media(max-width: 850px){
+    font-size: 3em;
+  }
+  @media(max-width: 680px){
+    font-size: 2.5em;
+  }
+  @media(max-width: 590px){
+    font-size: 2em;
+  }
+}
+
+.how-to-header {
+  background-color: $color1;
+  padding-top: 50px;
+}
+
+.how-to-header__content{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    justify-content: center;
+    &__img{
+        width: 10vw;
+        &--left{
+            margin-left: 20px;
+        }
+        &--right{
+            margin-right: 20px;
+        }
+        @media (max-width: 300px){
+
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__title{
+        margin: auto 10px;
+        font-size: 4em;
+        font-family: "Roboto", sans-serif;
+        color: black;
+        @media (max-width: 960px){
+          font-size: 3em;
+        }
+        @media (max-width: 740px){
+          font-size: 2em;
+        }
+        @media (max-width: 520px){
+          font-size: 1.5em;
+        }
+        @media (max-width: 410px){
+          font-size: 1em;
+        }
+    }
+}
+
+.how-to__row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color1;
+    &--last{
+        border:none;
+    }
+}
+.how-to__col{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    color: $text-black;
+    a{
+        color: #0000FF;
+        text-decoration: underline;
+        transition: color .3s;
+        &:hover{
+            color: $color5;
+        }
+    }
+}
+
+.backLink{
+    color: white;
+}
+.how-to__title{
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 1px solid $text-black;
+    padding: 20px;
+    font-family: $title-font;
+    @media (max-width: 800px) {
+        font-size: 1.5em;
+      }
+}
+.how-to__content{
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: left;
+    @media (max-width: 800px) {
+        font-size: 1em;
+      }
+
+    ul{
+        margin: 20px
+
+    }
+}

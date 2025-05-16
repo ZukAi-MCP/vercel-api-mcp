@@ -1,0 +1,90 @@
+@media (max-width: 850px) {
+  .getstarted-title {
+    font-size: 3em; } }
+
+@media (max-width: 680px) {
+  .getstarted-title {
+    font-size: 2.5em; } }
+
+@media (max-width: 590px) {
+  .getstarted-title {
+    font-size: 2em; } }
+
+.how-to-header {
+  background-color: #94D6FF;
+  padding-top: 50px; }
+
+.how-to-header__content {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto;
+  justify-content: center; }
+  .how-to-header__content__img {
+    width: 10vw; }
+    .how-to-header__content__img--left {
+      margin-left: 20px; }
+    .how-to-header__content__img--right {
+      margin-right: 20px; }
+    .how-to-header__content__img img {
+      width: 100%; }
+  .how-to-header__content__title {
+    margin: auto 10px;
+    font-size: 4em;
+    font-family: "Roboto", sans-serif;
+    color: black; }
+    @media (max-width: 960px) {
+      .how-to-header__content__title {
+        font-size: 3em; } }
+    @media (max-width: 740px) {
+      .how-to-header__content__title {
+        font-size: 2em; } }
+    @media (max-width: 520px) {
+      .how-to-header__content__title {
+        font-size: 1.5em; } }
+    @media (max-width: 410px) {
+      .how-to-header__content__title {
+        font-size: 1em; } }
+
+.how-to__row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #94D6FF; }
+  .how-to__row--last {
+    border: none; }
+
+.how-to__col {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  color: #333; }
+  .how-to__col a {
+    color: #0000FF;
+    text-decoration: underline;
+    transition: color .3s; }
+    .how-to__col a:hover {
+      color: #FFF987; }
+
+.backLink {
+  color: white; }
+
+.how-to__title {
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  padding: 20px;
+  font-family: "Roboto", sans-serif; }
+  @media (max-width: 800px) {
+    .how-to__title {
+      font-size: 1.5em; } }
+
+.how-to__content {
+  padding: 20px;
+  font-size: 1.5em;
+  text-align: left; }
+  @media (max-width: 800px) {
+    .how-to__content {
+      font-size: 1em; } }
+  .how-to__content ul {
+    margin: 20px; }

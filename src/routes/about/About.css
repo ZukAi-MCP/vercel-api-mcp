@@ -1,0 +1,67 @@
+.smly {
+  background-color: #94D6FF; }
+
+.smlyabout {
+  max-width: 800px;
+  margin: auto; }
+  .smlyabout__title {
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #333; }
+  .smlyabout__subtitle {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #333; }
+  .smlyabout p {
+    font-size: 1.5em;
+    color: #333;
+    padding: 40px;
+    text-align: left; }
+    @media (max-width: 800px) {
+      .smlyabout p {
+        font-size: 1em; } }
+  .smlyabout a {
+    color: blue;
+    text-decoration: underline;
+    transition: color .3s; }
+    .smlyabout a:hover {
+      color: #FFF987; }
+  .smlyabout__back {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 2em;
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+    padding-bottom: 20px; }
+    .smlyabout__back a {
+      color: #333; }
+      .smlyabout__back a:hover {
+        color: #FFF987; }
+
+.backbtn {
+  padding: 20px;
+  border-radius: 3px;
+  background-color: orange;
+  font-size: 1.5em; }
+
+.kenyaimg {
+  display: flex;
+  max-width: 700px;
+  width: 95vw;
+  margin: auto; }
+
+.about__list {
+  font-size: 1.5em;
+  margin: 0 30px;
+  color: #333; }
+  @media (max-width: 800px) {
+    .about__list {
+      font-size: 1em; } }
+  .about__list__item {
+    text-align: left; }
