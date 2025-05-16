@@ -1,0 +1,13 @@
+{
+  "components": {
+    "Coins": {},
+    "Header": {},
+    "Heading": {},
+    "IndexAbout": {},
+    "IndexHowto": {},
+    "IndexInfo": {},
+    "IndexTodo": {},
+    "IndexWallets": {},
+    "Modals": {}
+  }
+}

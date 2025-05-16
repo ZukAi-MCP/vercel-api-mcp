@@ -1,43 +1,44 @@
 {
-	"name": "vercel-mcp",
-	"version": "0.0.6",
-	"description": "An MCP server that connects to Vercel API",
-	"module": "index.ts",
-	"bin": {
-		"vercel-mcp": "./build/index.js"
-	},
-	"files": [
-		"build"
-	],
-	"type": "module",
-	"scripts": {
-		"build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
-		"check": "bunx biome check --write .",
-		"start": "node build/index.js",
-		"bump": "npm version patch --no-git-tag-version",
-		"prepublishOnly": "bun check && npm run build && npm run bump",
-		"push": "npm run build && npm publish"
-	},
-	"dependencies": {
-		"@modelcontextprotocol/sdk": "^1.6.0",
-		"@vercel/sdk": "^1.3.1",
-		"workers-mcp": "^0.0.13",
-		"zod": "^3.24.2"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@types/bun": "^1.2.4",
-		"@types/node": "^22.13.5",
-		"typescript": "^5.7.3"
-	},
-	"author": "zueai",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/zueai/vercel-api-mcp"
-	},
-	"engines": {
-		"node": ">=18"
-	}
+  "name": "smly.trade",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass-chokidar": "^1.3.5",
+    "npm-run-all": "^4.1.5",
+    "pm2": "^3.5.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.0.1",
+    "react-twitter-widgets": "^1.7.1"
+  },
+  "scripts": {
+    "build-workdir": "[ -d './build' ] || git worktree add ./build gh-pages ; git --git-dir=./build/.git --work-tree=./build pull origin gh-pages",
+    "build-fixworkdir": "[ -e './build/.git' ] || echo \"gitdir: $(pwd)/.git/worktrees/build\" > './build/.git' ; git --git-dir=./build/.git --work-tree=./build checkout CNAME",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm-run-all build-workdir build-css build-js build-fixworkdir",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "git --git-dir=./build/.git --work-tree=./build add -A ; git --git-dir=./build/.git --work-tree=./build commit -m \"Site at $(git rev-parse --short HEAD)\" ; git push origin gh-pages",
+    "generate": "rc-autocomplete"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "react-autocomplete-cli": "0.0.3"
+  }
 }
-
