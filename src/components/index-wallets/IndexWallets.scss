@@ -1,0 +1,64 @@
+@import '../../config.scss';
+
+
+
+.wallet{
+  background-color: white;
+
+
+  &__content{
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    &__img{
+      width: 35%;
+      padding: 0 10px 20px 0;
+      //display: flex;
+      position: relative;
+
+      img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 20px;
+        //display: flex;
+        //margin-top: auto;
+      }
+    }
+
+    &__title{
+      display: flex;
+      padding: 20px 0;
+      max-width: 1200px;
+      border-bottom: 2px solid $text-black;
+      font-size: 1.5em;
+      margin: 0 20px;
+      h2{
+        font-size: 36px;
+        color: $text-black;
+        margin: auto;
+        @media (max-width: 460px) {
+            font-size: 30px;
+          }
+        }
+      }
+      &__info{
+        display: flex;
+        flex-direction: row;
+      }
+      &__text{
+        padding: 20px 5px 20px 20px;
+        font-size: 1.6em;
+        color: $text-black;
+        width: 70%;
+        text-align: left;
+        @media (max-width: 460px) {
+            font-size: 1em;
+          }
+        }
+      }
+
+}

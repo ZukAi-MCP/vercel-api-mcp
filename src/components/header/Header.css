@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+  width: 100%;
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 20px;
+  /*
+  @media (max-width: 540px) {
+    &__hide {
+      visibility: hidden;
+    }
+  }
+  */ }
+  .header__content {
+    max-width: 2000px;
+    margin: 0 auto; }
+  .header__row {
+    display: flex;
+    margin-right: -10px;
+    margin-left: -10px; }
+  .header__title {
+    padding: 5px;
+    font-family: "Roboto Slab", georgia, serif;
+    font-size: 1.5rem; }
+    .header__title a {
+      text-decoration: none;
+      color: #fff; }
+    @media (max-width: 460px) {
+      .header__title {
+        display: none; } }
+  .header__icon {
+    display: flex; }
+  .header__nav {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex; }
+  .header__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%; }
+    @media (max-width: 460px) {
+      .header__list {
+        width: 1em; } }
+  .header__item {
+    display: flex;
+    font-size: 1rem;
+    margin: 0px 20px; }
+  @media (max-width: 800px) {
+    .header__hide {
+      display: none; } }
+  @media (max-width: 460px) {
+    .header {
+      margin: 0; } }
+  .header__coins {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    right: 0; }
+    @media (max-width: 460px) {
+      .header__coins {
+        justify-content: center; } }
+  .header__coin {
+    display: block;
+    font-size: 11px;
+    margin: 0px 5px; }
+    .header__coin__title {
+      font-size: 9px; }
+  .header__link {
+    color: #eee;
+    text-decoration: none; }
+
+.dropdown {
+  display: inline-block; }
+  .dropdown__header {
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap; }
+    .dropdown__header__title {
+      font-size: 1.5em;
+      padding: 0px 7px; }
+  .dropdown__header:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+  .dropdown__list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 2px 2px 0 0;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style-type: none; }
+    .dropdown__list__item {
+      padding: 10px 30px;
+      cursor: pointer;
+      white-space: nowrap;
+      border-bottom: 0.5px solid #ccc; }
+    .dropdown__list__item:hover {
+      background-color: rgba(0, 0, 0, 0.5); }
+  .dropdown__link {
+    width: 100%;
+    color: #eee;
+    text-decoration: none;
+    font-family: "Roboto Slab", georgia, serif; }

@@ -1,0 +1,44 @@
+.wallet {
+  background-color: white; }
+  .wallet__content {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    align-content: center; }
+    .wallet__content__img {
+      width: 35%;
+      padding: 0 10px 20px 0;
+      position: relative; }
+      .wallet__content__img img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 20px; }
+    .wallet__content__title {
+      display: flex;
+      padding: 20px 0;
+      max-width: 1200px;
+      border-bottom: 2px solid #333;
+      font-size: 1.5em;
+      margin: 0 20px; }
+      .wallet__content__title h2 {
+        font-size: 36px;
+        color: #333;
+        margin: auto; }
+        @media (max-width: 460px) {
+          .wallet__content__title h2 {
+            font-size: 30px; } }
+    .wallet__content__info {
+      display: flex;
+      flex-direction: row; }
+    .wallet__content__text {
+      padding: 20px 5px 20px 20px;
+      font-size: 1.6em;
+      color: #333;
+      width: 70%;
+      text-align: left; }
+      @media (max-width: 460px) {
+        .wallet__content__text {
+          font-size: 1em; } }

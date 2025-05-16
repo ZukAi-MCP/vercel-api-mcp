@@ -1,0 +1,86 @@
+@import '../../config.scss';
+
+
+.coininfo{
+  border-right: solid 2px $text-black;
+  padding-right: 10px;
+}
+.whitepaper{
+  padding-left: 10px;
+}
+/*
+@media(max-width: 620px){
+  .whitepaper .coininfo{
+    font-size: 1.5em;
+  }
+}
+@media(max-width: 540px){
+  .whitepaper .coininfo{
+    font-size: 1.5em;
+  }
+}
+*/
+.coin{
+  background-color: $color1;
+
+
+  &__content{
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    &__info{
+      display: flex;
+      flex-direction: row;
+      @media(max-width: 620px){
+        flex-direction: column-reverse;
+      }
+      &__img{
+        padding: 20px 20px;
+        width: 30%;
+        @media(max-width: 620px){
+          margin: auto;
+          width: 45%;
+        }
+        img{
+          width: 100%;
+          display: flex;
+          margin: auto 0 0 0;
+        }
+      }
+    }
+
+    &__title{
+      display: flex;
+      padding: 20px 0;
+      max-width: 1200px;
+      border-bottom: 2px solid $text-black;
+      font-size: 1.5em;
+      margin: 0 20px;
+      h2{
+        font-size: 36px;
+        color: $text-black;
+        margin: auto;
+        @media (max-width: 460px) {
+            font-size: 30px;
+          }
+        }
+      }
+      &__text{
+        width: 70%;
+        padding: 20px 20px;
+        font-size: 1.6em;
+        color: $text-black;
+        text-align: left;
+
+        @media (max-width: 460px) {
+            font-size: 1em;
+          }
+
+        @media(max-width: 620px){
+          width: 100%;
+        }
+        }
+      }
+}

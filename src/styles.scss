@@ -1,0 +1,75 @@
+@import 'config.scss';
+
+/* setjum box-sizing: border-box; á allt */
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $body-font;
+}
+
+*, *:before, *:after { /* stylelint-disable-line */
+  box-sizing: inherit;
+
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0;
+}
+
+html { /* stylelint-disable-line */
+  // til þess að texti liggi ekki upp við brún á viewport þegar
+  // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
+  // ruglar líka ekki í grid overlay
+  // margin-right: $gutter;
+  // margin-left: $gutter;
+
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (min-width: $max-width) {
+    margin: 0;
+  }
+}
+
+body {
+    // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
+    // hér sem hidden, þá fáum við ekki lárétta skrunstiku
+    overflow-x: hidden;
+    // background-color: rgb(245,245,245);
+}
+
+img { /* stylelint-disable-line */
+  // max-width: 100%;
+}
+
+main { /* stylelint-disable-line */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.smileypage {
+  display: block;
+
+  &__sidebar {
+    margin-top: 50px;
+    width: 300px;
+    height: 500px;
+    // position: fixed;
+    float: right;
+    right: 0;
+  }
+}
+
+
+.content{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.info{
+    align-items: center;
+
+}

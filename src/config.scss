@@ -1,0 +1,38 @@
+// breytur fyrir mikið notaðar stærðir
+$max-width: 2000px;
+$gutter: 20px;
+
+$font-main: 'Open Sans', helvetica, arial, sans-serif;
+$font-heading: 'Roboto Slab', georgia, serif;
+
+// mixin sem reiknar nákvæmar prósentur útfrá dálkum
+@mixin columns($col: 1) {
+  // margföldum með "1%" til að breyta gildi í prósentu gildi
+  width: ($col / 12 * 100) * 1%;
+
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+}
+
+$bright-cerulean: #0CAADC;
+$cyan: #11B5E4;
+$cyan-blue: #1481BA;
+$jungle-green: #034748;
+$rich-black: #001021;
+$title-font: 'Roboto', sans-serif;
+$body-font: 'Work Sans', sans-serif;
+
+$text-black: #333;
+
+$blue1: #84ceeb;
+$blue2: #5ab9ea;
+$blue3: #5680e9;
+$purple1: #c1c8e4;
+$purple2: #8860d0;
+
+
+$color1: #94D6FF;
+$color2: #C29DE8;
+$color3: #FF8D87;
+$color4: #65EB84;
+$color5: #FFF987;

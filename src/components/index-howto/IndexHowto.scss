@@ -1,0 +1,106 @@
+/* HOW TO GET SMLY */
+
+@import '../../config.scss';
+
+.howto{
+    display: flex;
+    flex-direction: column;
+    background-color : $color1;
+    color: white;
+    &__content{
+        flex-direction: row;
+        @media (max-width: 1050px) {
+            flex-direction: column;
+
+
+        }
+    }
+}
+.howto__content__title{
+    padding: 20px 0;
+    color: $text-black;
+    max-width: 1200px;
+    border-bottom: 2px solid $text-black;
+    font-size: 2em;
+    margin: 0 20px;
+    @media (max-width: 600px) {
+        font-size: 1.5rem;
+    }
+}
+.howto__content__text{
+    padding: 20px 0;
+    color: $text-black;
+    font-size: 1.5em;
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    &__item{
+
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+        border-bottom: 2px solid $text-black;
+        cursor: pointer;
+        transition-timing-function: ease-in-out;
+        transition-duration: 300ms;
+        text-decoration: none;
+
+        &:hover{
+            padding-left: 30px;
+
+        }
+    }
+
+    &__img{
+        display: flex;
+        width: 15%;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        @media (max-width: 600px) {
+            margin-left: 30px;
+            font-size: 0.7em;
+        }
+
+        &__title{
+            display: flex;
+            font-size: 2em;
+            color: $text-black;
+            @media (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__about{
+        display: flex;
+        color: $text-black;
+        text-decoration: none;
+        }
+    }
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.smileypage__sidebar{
+    margin: 50px;
+    width: 400px;
+    @media (max-width: 1050px) {
+        width: 500px;
+    }
+    @media (max-width: 600px) {
+        width: 350px;
+        margin: 50px auto;
+    }
+}

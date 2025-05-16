@@ -1,0 +1,44 @@
+.tutor {
+  background-color: white; }
+  .tutor__content {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    align-content: center; }
+    .tutor__content__title {
+      display: flex;
+      padding: 20px 0;
+      max-width: 1200px;
+      border-bottom: 2px solid #333;
+      font-size: 1.5em;
+      margin: 0 20px;
+      justify-content: center; }
+      .tutor__content__title img {
+        width: 100px;
+        height: 100px; }
+        @media (max-width: 500px) {
+          .tutor__content__title img {
+            width: 80px;
+            height: 80px; } }
+        @media (max-width: 400px) {
+          .tutor__content__title img {
+            width: 60px;
+            height: 60px; } }
+      .tutor__content__title h2 {
+        font-size: 36px;
+        color: #333;
+        margin: auto 0; }
+        @media (max-width: 460px) {
+          .tutor__content__title h2 {
+            font-size: 30px; } }
+    .tutor__content__text {
+      padding: 20px 20px;
+      font-size: 1.6em;
+      color: #333;
+      text-align: left;
+      display: flex;
+      flex-direction: row; }
+      @media (max-width: 460px) {
+        .tutor__content__text {
+          font-size: 1em; } }

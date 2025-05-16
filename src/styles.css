@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* setjum box-sizing: border-box; á allt */
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif; }
+
+*, *:before, *:after {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
+html {
+  /* stylelint-disable-line */
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+  @media (min-width: 2000px) {
+    html {
+      margin: 0; } }
+
+body {
+  overflow-x: hidden; }
+
+img {
+  /* stylelint-disable-line */ }
+
+main {
+  /* stylelint-disable-line */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.smileypage {
+  display: block; }
+  .smileypage__sidebar {
+    margin-top: 50px;
+    width: 300px;
+    height: 500px;
+    float: right;
+    right: 0; }
+
+.content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center; }
+
+.info {
+  align-items: center; }
